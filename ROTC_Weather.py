@@ -25,8 +25,10 @@ except Exception:
 # -----------------------
 # CONFIG
 # -----------------------
-API_KEY = "6177d93754bf4766adc190645250812"  # replace if needed
-DEFAULT_LOCATION = "Brookings, SD"
+import os
+
+API_KEY = os.environ["WEATHER_API_KEY"]
+LOCATION = os.environ["DEFAULT_LOCATION"]
 WBGT_CUTOFF_F = 50
 FORECAST_DAYS = 7
 WEEKLY_DAYS = 7
