@@ -28,7 +28,7 @@ except Exception:
 import os
 
 API_KEY = os.environ["WEATHER_API_KEY"]
-LOCATION = os.environ["DEFAULT_LOCATION"]
+DEFAULT_LOCATION = os.environ["DEFAULT_LOCATION"]
 WBGT_CUTOFF_F = 50
 FORECAST_DAYS = 7
 WEEKLY_DAYS = 7
