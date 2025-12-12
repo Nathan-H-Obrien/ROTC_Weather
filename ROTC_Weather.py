@@ -143,14 +143,14 @@ def recommend_pt_uniform(temp_f):
     except Exception:
         return "Standard PT uniform"
     if t > 80:
-        return "Short-sleeve shirt + shorts"
+        return "APFU Short-sleeve + shorts"
     if 60 <= t <= 80:
-        return "Short-sleeve shirt + shorts (light jacket optional)"
+        return "APFU Short-sleeve shirt + APFU shorts"
     if 40 <= t <= 59:
-        return "Long-sleeve shirt + pants"
+        return "APFU Short-sleeve + APFU Long-sleeve + APFU shorts"
     if 20 <= t <= 39:
-        return "Sweats + jacket (+ hat optional)"
-    return "Full cold-weather PT gear (sweats, gloves, hat)"
+        return "APFU Short-sleeve + APFU Long-sleeve + APFU Pants or civilian equivalent + APFU Jacket or civilian equivalent + Fleece Cap or civilian equivalent"
+    return "APFU Short-sleeve + APFU Long-sleeve + APFU Pants or civilian equivalent + APFU Jacket or civilian equivalent + Fleece Cap or civilian equivalent + Gloves"
 
 # Final decision logic
 def final_training_decision(temp_f, wind_chill_f, heat_cat_num, wbgt_applicable, precip_override=None, precip_level="low"):
